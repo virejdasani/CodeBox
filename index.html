@@ -8,14 +8,21 @@
     <title>Code Box</title>
 </head>
 <body>
+    <!-- Where the code is written -->
     <div class="code-area">
-        <textarea id="htmlCode" placeholder="<!-- HTML Code -->" 
+        <img id="langLogo" src="./assets/htmlTransparentLogo.png"/>
+        <textarea id="htmlCode" placeholder="<!-- HTML -->" 
                   oninput="showPreview()"></textarea>
-        <textarea id="cssCode" placeholder="/* CSS Code */" 
+
+        <img id="langLogo" src="./assets/cssTransparentLogo.png"/>
+        <textarea id="cssCode" placeholder="/* CSS */" 
                   oninput="showPreview()"></textarea>
-        <textarea id="jsCode" placeholder="// JavaScript Code" 
+
+        <img id="langLogo" src="./assets/jsTransparentLogo.png"/>
+        <textarea id="jsCode" placeholder="// JavaScript" 
                   oninput="showPreview()"></textarea>
       </div>
+      <!-- Where the code gets executed -->
       <div class="preview-area">
         <iframe id="preview-window"></iframe>
       </div>
