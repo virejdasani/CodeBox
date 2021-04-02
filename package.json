@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/virejdasani/CodeBox/issues"
   },
-  "homepage": "https://github.com/virejdasani/CodeBox#readme"
+  "homepage": "https://github.com/virejdasani/CodeBox#readme",
+  "dependencies": {
+    "electron": "^12.0.2"
+  }
 }
