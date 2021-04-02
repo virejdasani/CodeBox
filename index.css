@@ -21,6 +21,9 @@ body {
     resize: both;
     border-right: 1px solid #555;
     background-color: #1B212C;
+    /* These 2 make it resizable */
+    resize:both;
+    overflow:auto; 
 }
 
 .code-area textarea {
