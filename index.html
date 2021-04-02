@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Code Box</title>
+</head>
+<body>
+    <div class="code-area">
+        <textarea id="htmlCode" placeholder="HTML Code" 
+                  oninput="showPreview()"></textarea>
+        <textarea id="cssCode" placeholder="CSS Code" 
+                  oninput="showPreview()"></textarea>
+        <textarea id="jsCode" placeholder="JavaScript Code" 
+                  oninput="showPreview()"></textarea>
+      </div>
+      <div class="preview-area">
+        <iframe id="preview-window"></iframe>
+      </div>
+
+      <script src="main.js"></script>
+</body>
+</html>
