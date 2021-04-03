@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Code Box</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Code Box</title>
 </head>
+
 <body>
-    <!-- Where the code is written -->
-    <div class="code-area">
-        <img id="langLogo" src="./assets/htmlTransparentLogo.png"/>
-        <textarea id="htmlCode" placeholder="<!-- HTML -->" 
-                  oninput="showPreview()"></textarea>
+  <!-- Where the code is written -->
+  <div id="code-area">
+    <div id="containerHTML"></div>
+    <div id="containerCSS"></div>
+    <div id="containerJS"></div>
+  </div>
 
-        <img id="langLogo" src="./assets/cssTransparentLogo.png"/>
-        <textarea id="cssCode" placeholder="/* CSS */" 
-                  oninput="showPreview()"></textarea>
 
-        <img id="langLogo" src="./assets/jsTransparentLogo.png"/>
-        <textarea id="jsCode" placeholder="// JavaScript" 
-                  oninput="showPreview()"></textarea>
-      </div>
-      <!-- Where the code gets executed -->
-      <div class="preview-area">
-        <iframe id="preview-window"></iframe>
-      </div>
+  <div id="previewArea">
+    <iframe id="preview-window"></iframe>
+  </div>
 
-      <script src="main.js"></script>
-      
+  <script src="monaco-editor/monaco-editor.js"></script>
+  <script src="main.js"></script>
+
 </body>
+
 </html>
