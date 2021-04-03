@@ -29,7 +29,7 @@ let proxy = URL.createObjectURL(new Blob([`
 // This is monaco editor, used in vs code 
 require(["vs/editor/editor.main"], function () {
     let editor = monaco.editor.create(document.getElementById('containerHTML'), {
-        value: '',
+        value: '<!-- HTML -->',
         language: 'html',
         theme: 'vs-dark'
     });
@@ -37,7 +37,7 @@ require(["vs/editor/editor.main"], function () {
 
 require(["vs/editor/editor.main"], function () {
     let editor = monaco.editor.create(document.getElementById('containerCSS'), {
-        value: '',
+        value: '/* CSS */',
         language: 'css',
         theme: 'vs-dark'
     });
@@ -45,7 +45,7 @@ require(["vs/editor/editor.main"], function () {
 
 require(["vs/editor/editor.main"], function () {
     let editor = monaco.editor.create(document.getElementById('containerJS'), {
-        value: '',
+        value: '// JavaScript',
         language: 'javascript',
         theme: 'vs-dark'
     });
