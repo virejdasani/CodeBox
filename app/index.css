@@ -9,11 +9,6 @@ body {
     display: flex;
 }
 
-#langLogo {
-    width: 30px;
-    margin: 5px;
-}
-
 #preview-area {
     width: 50%;
     height: 100%;
@@ -40,4 +35,5 @@ body {
     height: 33.33%;
     overflow: hidden;
     resize: both;
+    border: solid 2px black;
 }
