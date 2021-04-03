@@ -63,3 +63,16 @@ function showPreview() {
 if (navigator.onLine === false) {
     window.location.replace("./offline/index.html");
 }
+
+// When ctrl/cmd + s is pressed, the iframe is reloaded by executing showPreview()
+document.addEventListener("keydown", function (e) {
+    if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.key === 's') {
+        // e.preventDefault()
+        showPreview()
+    }
+}, false)
+
+// showPreview() every 3 seconds (reload the iframe)
+setInterval(function () {
+    showPreview()
+}, 5000);

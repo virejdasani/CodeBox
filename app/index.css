@@ -23,7 +23,7 @@ body {
 #code-area {
     width: 50%;
     height: 100%;
-    background-color: #252525;
+    background-color: rgb(20, 20, 20);
     resize: both;
 }
 
@@ -35,5 +35,5 @@ body {
     height: 33.33%;
     overflow: hidden;
     resize: both;
-    border: solid 2px black;
+    border: solid 3px rgb(20, 20, 20);
 }

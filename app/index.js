@@ -132,6 +132,13 @@ const template = [
     role: 'about',
     submenu: [
       {
+        label: 'Check out the docs',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://github.com/virejdasani/CodeBox/blob/master/README.md')
+        },
+      },
+      {
         label: 'Developed by Virej Dasani',
         click: async () => {
           const { shell } = require('electron')
@@ -143,6 +150,13 @@ const template = [
         click: async () => {
           const { shell } = require('electron')
           await shell.openExternal('https://github.com/virejdasani/CodeBox')
+        },
+      },
+      {
+        label: 'Report a bug or request a feature',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://github.com/virejdasani/CodeBox/issues')
         },
       }
     ]
