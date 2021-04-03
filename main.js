@@ -1,13 +1,4 @@
-function showPreview() {
-    var htmlCode = document.getElementById("htmlCode").value
-    var cssCode = "<style>" + document.getElementById("cssCode").value + "</style>"
-    var jsCode = "<script>" + document.getElementById("jsCode").value + "</script>"
-    var frame = document.getElementById("preview-window").contentWindow.document
-    frame.open()
-    frame.write(htmlCode + cssCode + jsCode)
-    frame.close()
-}
-
+// For monaco editor
 require.config({
     paths: {
         'vs': 'https://unpkg.com/monaco-editor@latest/min/vs'
@@ -26,27 +17,44 @@ let proxy = URL.createObjectURL(new Blob([`
     type: 'text/javascript'
 }));
 
-// This is monaco editor, used in vs code 
+// These are predefined because we need to get their values
+var editorHTML
+var editorCSS
+var editorJS
+
+// These three below are for the three editors
+// For HTML
 require(["vs/editor/editor.main"], function () {
-    let editor = monaco.editor.create(document.getElementById('containerHTML'), {
+    editorHTML = monaco.editor.create(document.getElementById('containerHTML'), {
         value: '<!-- HTML -->',
         language: 'html',
         theme: 'vs-dark'
     });
 });
-
+// For CSS
 require(["vs/editor/editor.main"], function () {
-    let editor = monaco.editor.create(document.getElementById('containerCSS'), {
+    editorCSS = monaco.editor.create(document.getElementById('containerCSS'), {
         value: '/* CSS */',
         language: 'css',
         theme: 'vs-dark'
     });
 });
-
+// For JS
 require(["vs/editor/editor.main"], function () {
-    let editor = monaco.editor.create(document.getElementById('containerJS'), {
+    editorJS = monaco.editor.create(document.getElementById('containerJS'), {
         value: '// JavaScript',
         language: 'javascript',
         theme: 'vs-dark'
     });
 });
+
+// To render the code in the iframe
+function showPreview() {
+    var htmlCode = editorHTML.getValue()
+    var cssCode = "<style>" + editorCSS.getValue() + "</style>"
+    var jsCode = "<script>" + editorJS.getValue() + "</script>"
+    var frame = document.getElementById("preview-window").contentWindow.document
+    frame.open()
+    frame.write(htmlCode + cssCode + jsCode)
+    frame.close()
+}
