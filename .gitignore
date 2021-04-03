@@ -4,3 +4,4 @@ app/node_modules
 app/.DS_Store
 website/node_modules
 website/.DS_Store
+builds
