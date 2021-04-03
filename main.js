@@ -58,3 +58,8 @@ function showPreview() {
     frame.write(htmlCode + cssCode + jsCode)
     frame.close()
 }
+
+// Check if online or offline
+if (navigator.onLine === false) {
+    window.location.replace("./offline/index.html");
+}

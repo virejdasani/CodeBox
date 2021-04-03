@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+#langLogo {
+    width: 30px;
+    margin: 5px;
+}
+
+.code-area {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    resize: both;
+    border-right: 1px solid #555;
+    background-color: #1B212C;
+    /* These 2 make it resizable */
+    resize: both;
+    overflow: auto;
+}
+
+.code-area textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 33.33%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #1B212C;
+    border: solid 2px #323d52;
+    color: white;
+    
+    /* This img has line numbers */
+    /* background: url('assets/numbers.png');
+    background-attachment: local;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    padding-top: 10px; */
+}
+
+
+.code-area textarea::placeholder {
+    color: rgb(152, 152, 152);
+}
+
+.preview-area {
+    width: 50%;
+}
+
+.preview-area iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
