@@ -12,6 +12,7 @@
 - Furthermore, it features hot reload which means, you don't have to press Ctrl/Cmd + S to show the code in the preview panel. It reloads automatically every time any key is pressed!
 
 ####- Check it out on GitHub [here](https://github.com/virejdasani/CodeBox)
+
 ####- Download it [here](https://github.com/virejdasani/CodeBox/releases/tag/v1.0.0)
 
 > I would really appreciate a star on GitHub and any feedback you may have. Thanks!
