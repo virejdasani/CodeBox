@@ -1,5 +1,17 @@
 # CodeBox
-### A sandbox coding environment inspired by CodePen and JSFiddle.
-- It features the Monaco Editor (Also used in VS Code). It everything from Syntax Highlighting to code Intellisense.
+- CodeBox is a coding environment with HTML, CSS and JavaScript editors with a live preview panel to show what the code would look like in the browser
+- It's made using the Electron framework
+- It is inspired by Codepen and JsFiddle
 
-![](https://github.com/virejdasani/CodeBox/blob/master/assets/CodeBox.gif)
+![CodeBox-Preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hxnzeq390mx60u4ty28c.png)
+ 
+
+## Why use CodeBox?
+- CodeBox is better than the editors in CodePen and JSFiddle because CodeBox features the same editor used in VS Code.
+- This means that it has autocomplete, syntax highlighting, and a lot of other features that we all know and love from VS Code
+- Furthermore, it features hot reload which means, you don't have to press Ctrl/Cmd + S to show the code in the preview panel. It reloads automatically every time any key is pressed!
+
+####- Check it out on GitHub [here](https://github.com/virejdasani/CodeBox)
+####- Download it [here](https://github.com/virejdasani/CodeBox/releases/tag/v1.0.0)
+
+> I would really appreciate a star on GitHub and any feedback you may have. Thanks!
