@@ -1,4 +1,4 @@
-<!-- ![Github All Releases](https://img.shields.io/github/downloads/virejdasani/codebox/total.svg)]() -->
+![Github All Releases](https://img.shields.io/github/downloads/virejdasani/codebox/total.svg)]() 
 # CodeBox
 - CodeBox is a coding environment with HTML, CSS and JavaScript editors with a live preview panel to show what the code would look like in the browser
 - It's made using the Electron framework
