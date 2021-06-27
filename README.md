@@ -4,6 +4,8 @@
 - It's made using the Electron framework
 - It is inspired by Codepen and JsFiddle
 
+## Download CodeBox for your operating system [here](https://github.com/virejdasani/CodeBox/releases)
+
 ![CodeBox-Preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hxnzeq390mx60u4ty28c.png)
  
 
