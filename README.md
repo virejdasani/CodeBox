@@ -1,13 +1,12 @@
-![Github All Releases](https://img.shields.io/github/downloads/virejdasani/codebox/total.svg)
+<!-- ![Github All Releases](https://img.shields.io/github/downloads/virejdasani/codebox/total.svg) -->
 # CodeBox
+![CodeBox-Preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hxnzeq390mx60u4ty28c.png)
+
 - CodeBox is a coding environment with HTML, CSS and JavaScript editors with a live preview panel to show what the code would look like in the browser
 - It's made using the Electron framework
 - It is inspired by Codepen and JsFiddle
 
-# Download CodeBox for your operating system [here](https://github.com/virejdasani/CodeBox/releases)
-
-![CodeBox-Preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hxnzeq390mx60u4ty28c.png)
- 
+# Download CodeBox for your operating system [here](https://github.com/virejdasani/CodeBox/releases) 
 
 ## Why use CodeBox?
 - CodeBox is better than the editors in CodePen and JSFiddle because CodeBox features the same editor used in VS Code.
