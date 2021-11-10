@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page title and Favicon -->
+  <title>Code Box</title>
+  <link rel="icon" href="assets/appLogo.png" />
+
+  <!-- Primary Meta Tags -->
+  <title>Code Box</title>
+  <meta name="title" content="Code Box">
+  <meta name="description" content="A sandbox coding environment, desktop app, inspired by CodePen and JSFiddle">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://virejdasani.github.io/CodeBox/">
+  <meta property="og:title" content="Code Box">
+  <meta property="og:description" content="A sandbox coding environment, desktop app, inspired by CodePen and JSFiddle">
+  <meta property="og:image" content="https://virejdasani.github.io/CodeBox/assets/appLogo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://virejdasani.github.io/CodeBox/">
+  <meta property="twitter:title" content="Code Box">
+  <meta property="twitter:description"
+    content="A sandbox coding environment, desktop app, inspired by CodePen and JSFiddle">
+  <meta property="twitter:image" content="https://virejdasani.github.io/CodeBox/assets/appLogo.png">
+
+  <!-- Scripts -->
+  <script src="./scripts/smooth-scroll.js"></script>
+  <script src="./scripts/smooth-scroll-commands.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Used to setup downloads -->
+  <iframe id="invisible" style="display:none;"></iframe>
+
+  <!-- This is the sticky bar that moves with a scroll -->
+  <div id="sticky-bar">
+    <div id="sticky-bar-content">
+      <div class="backdrop"></div>
+      <div class="foreground">
+        <div id="sticky-bar-squeezer">
+          <a id="sticky-bar-home" href="javascript:;" onclick="return scrollToTop();">
+            <img src="./assets/appLogo.png" width="50px" height="50px">
+            <h4>Code Box</h4>
+          </a>
+
+          <div id="sticky-bar-links">
+
+            <!-- GitHub Sticky Link -->
+            <a href="https://github.com/virejdasani/CodeBox" target="_blank">GitHub</a>
+            <div class="padding"></div>
+
+            <!-- Download Sticky Link -->
+            <a href="https://github.com/virejdasani/CodeBox/releases">Downloads</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-padding">
+    <!-- Contains all content including footer -->
+    <div class="main">
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Section 1                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div id="section-1" class="section-alignment">
+
+        <!-- Top content -->
+        <img id="app-icon" src="./assets/appLogo.png">
+        <h2 id="landing-header">Code Box</h2>
+        <h4 id="landing-subtitle">A sandbox coding environment, desktop app, inspired by CodePen and JSFiddle</h4>
+        <div class="padding"></div>
+
+        <iframe width="90%" height="380px" src="https://youtube.com/embed/6zsqGNgsQM8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <div class="padding-semi-large"></div>
+
+        <!-- -------------------------- App store buttons -------------------------- -->
+
+        <div id="app-store-buttons">
+          <!-- Download button -->
+          <a class="button-standard"
+            href="https://github.com/virejdasani/CodeBox/releases/download/v1.0.0/CodeBox-MacOS.zip">Download for
+            MacOS<img class="icon-link" src="./assets/icons/download-icon.svg"></a>
+
+          <p>|</p>
+
+          <!-- Download button -->
+          <a class="button-standard"
+            href="https://github.com/virejdasani/CodeBox/releases/download/v1.0.0/CodeBox-Windows.zip">Download for
+            Windows<img class="icon-link" src="./assets/icons/download-icon.svg"></a>
+
+          <p>|</p>
+
+          <!-- Download button -->
+          <a class="button-standard"
+            href="https://github.com/virejdasani/CodeBox/releases/download/v1.0.0/CodeBox-Linux.zip">Download for
+            Linux<img class="icon-link" src="./assets/icons/download-icon.svg"></a>
+
+        </div>
+
+        <!-- Indicators -->
+        <div id="indicators">
+
+          <div id="repo-links">
+            <!-- Releases -->
+            <a class="indicator" href="https://github.com/virejdasani/CodeBox/releases" target="_blank">Releases</a>
+
+            <p class="indicator indicator-separator">•</p>
+
+            <!-- Repository -->
+            <a class="indicator" href="https://github.com/virejdasani/CodeBox" target="_blank">Repository</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="padding-large"></div>
+      <div class="padding-large"></div>
+      <div class="padding-small"></div>
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Section 2                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div id="section-2">
+
+        <!-- How does it work -->
+        <div class="blurb">
+          <h3>What is CodeBox</h3>
+          <div class="padding-small"></div>
+          <span id="emoji-magnifying-glass" class="emoji">👨‍💻</span>
+        </div>
+        <p>
+          CodeBox is a coding environment with HTML, CSS, and JavaScript editors with a live preview panel to show what
+          the code would look like in the browser
+        </p>
+        <div class="center-image">
+          <img id="image1" src="assets/image1.png">
+        </div>
+
+        <div class="padding-blurb"></div>
+
+        <!-- Key support -->
+        <div class="blurb">
+          <h3>Why use CodeBox?</h3>
+          <div class="padding-small"></div>
+          <span id="emoji-keyboard" class="emoji">🤔</span>
+        </div>
+        <p>
+          <ul>
+            <li>CodeBox is better than the editors in CodePen and JSFiddle because CodeBox features the same editor used
+              in VS
+              Code.</li>
+            <li>This means that it has autocomplete, syntax highlighting, and a lot of other features that we all know
+              and love from VS Code.</li>
+            <li>Furthermore, it features hot reload which means, you don't have to press <kbd>Ctrl/Cmd + S</kbd> to
+              show the code in the preview panel. It reloads automatically every time a key is pressed!
+            </li>
+          </ul>
+        </p>
+        <div class="center-image">
+        </div>
+
+        <div class="center-image">
+          <img id="settings-window-image" src="assets/image2.png">
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Section 3                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div id="faq">
+
+        <!-- FAQ -->
+        <h2>Frequently asked questions</h2>
+
+        <div class="padding"></div>
+
+        <!-- Question 2 -->
+        <div class="padding-faq-block">
+          <h4>Does Code Box require a subscription?</h4>
+          <p>Nope. Code Box is completely open-source and free to use!</p>
+        </div>
+
+        <!-- Localization Question -->
+        <div class="padding-faq-block">
+          <h4>With what technologies is Code Box made?</h4>
+          <p>Code Box is made using the Electron framework and the JavaScript language</p>
+        </div>
+
+        <!-- Compatibility Question -->
+        <div class="padding-faq-block">
+          <h4>Compatibility</h4>
+          <p>Code Box works on Windows, MacOS, and Linux</p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="padding-faq-block" id="privacy">
+          <h4>What's Code Box's Privacy Policy?</h4>
+          <p>We do not collect any data at all!</p>
+        </div>
+
+        <!-- Extra padding -->
+        <div class="padding-faq-block"></div>
+
+        <!-- Still have questions? -->
+        <div class="padding-faq-block">
+          <h3 class="contact-us">Still have questions? <a href="mailto: dasanivirej@gmail.com" class="link">Get in
+              touch</a>. Got feedback or ideas for Code Box? We're all ears! Come <a
+              href="https://github.com/virejdasani/CodeBox/issues/new" class="link" target="_blank">share them with
+              us</a>
+            over on Github.
+          </h3>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+
+        <hr id="footer-rule" class="remove-bottom-margin">
+
+        <!-- Contains icons, and text -->
+        <div id="footer-content">
+
+          <!-- Created by... -->
+          <p class="footer-font">Code Box is developed and maintained by <a href="https://virejdasani.github.io/"
+              class="link" target="_blank">Virej Dasani</a></p>
+          <!-- Copyright -->
+          <p class="footer-font">©2021</p>
+        </div>
+      </div>
+
+      <!-- Bottom padding -->
+      <div class="padding-bottom"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
