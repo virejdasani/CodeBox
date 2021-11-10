@@ -1,7 +1,7 @@
 <!-- ![Github All Releases](https://img.shields.io/github/downloads/virejdasani/codebox/total.svg) -->
 # [CodeBox](https://virejdasani.github.io/CodeBox/)
 <!-- ![CodeBox-Preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hxnzeq390mx60u4ty28c.png) -->
-https://github.com/virejdasani/CodeBox/blob/master/assets/CodeBox-Gif-Preview.gif
+![](https://github.com/virejdasani/CodeBox/blob/master/assets/CodeBox-Gif-Preview.gif)
 
 - CodeBox is a coding environment with HTML, CSS and JavaScript editors with a live preview panel to show what the code would look like in the browser
 - It's made using the Electron framework
