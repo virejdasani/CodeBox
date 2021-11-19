@@ -1,4 +1,4 @@
-# Code Box - Desktop App
+# CodeBox - Desktop App
 
 ### How the project is laid out
 - index.js has the Electron app settings
