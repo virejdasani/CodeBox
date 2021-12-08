@@ -1,0 +1,3 @@
+- Cmd/Ctrl + R reloads the electron app. Make it so that doing that has the same effect as cmd + s
+- Add save functionality
+- Put codebox on electron store
